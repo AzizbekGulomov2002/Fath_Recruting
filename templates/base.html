@@ -5,6 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>FATH RECRUTING</title>
+    <link href="{%static 'img/favicon.ico'%}" rel="icon">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -49,8 +50,14 @@
     <!-- Navbar Start -->
     <div style="margin-top: 32px;" class="container-fluid p-0 fixed-top">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5 ">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                {% for about in About %}
+                <h1 class="m-0 display-5 text-uppercase text-primary"><img style="width: 50px; height: 50px; border-radius: 50%;" src="{{ about.image.url }}" alt=""></h1>
+                {% endfor %}
+            </a>
             {% for i in Company %}
             <a href="/" class="navbar-brand ml-lg-3">
+                
                 <h1 style="font-size: 25px;text-align: center;" class="m-0 display-5 text-uppercase text-primary">
                 {{i.name}}</h1>
             </a>
