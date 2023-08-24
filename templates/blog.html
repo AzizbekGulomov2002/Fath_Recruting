@@ -30,17 +30,17 @@
                   <img class="img-fluid w-100" src="{{ blog.image.url }}" alt="" />
                   <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
                     <h4 style="color: white;" class="font-weight-bold mb-n1">{{ blog.date.day }}</h4>
-                    <small class="text-white text-uppercase">{{ blog.date.month }} / {{ blog.date.year }}</small>
+                    <small style="font-size: 10px;" class="text-white text-uppercase">{{ blog.date.month }} / {{ blog.date.year }}</small>
                   </div>
                 </div>
                 <div class="bg-secondary mb-4" style="padding: 30px;">
                   <h4 class="font-weight-bold mb-3">{{ blog.name }}</h4>
                   <p>{{ blog.about }}</p>
-                  <a class="border-bottom border-primary text-uppercase text-decoration-none" href="{{ blog.id }}">Read More <i class="fa fa-angle-right"></i></a><br /><br />
+                  <a  style="color:  rgb(231, 216, 3) !important;"class="border-bottom border-primary text-uppercase text-decoration-none" href="{{ blog.id }}">Read More <i class="fa fa-angle-right"></i></a><br /><br />
 
                   <div class="d-flex mb-4">
                     <div class="d-flex align-items-center ml-1">
-                      <i class="far fa-eye text-primary">&nbsp;{{ blog.viewed }}</i>
+                      <i  style="color:  rgb(231, 216, 3) !important;" class="far fa-eye text-primary">&nbsp;{{ blog.viewed }}</i>
                     </div>
                   </div>
                 </div>
